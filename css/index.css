@@ -1,0 +1,29 @@
+/* 
+BEM设计模块
+
+模块（没有前缀，多个单词用 - 连接）
+元素（元素在模块之后，可以有多个层级，以 __ 连接）
+修饰（某元素、某模块特别的状态，必须有一个状态名和状态值，用 _ 连接）
+
+ */
+
+.header {
+  height: 80px;
+  background-color: #f7f7f7;
+}
+.header__logo {
+  width: 150px;
+  height: 38px;
+  background: url("../images/0-logo.png") left center no-repeat;
+  background-size: 38px 38px;
+  font-size: 20px;
+  color: #07111b;
+  /* 文本块首行的缩进 */
+  text-indent: 50px;
+}
+.header__nav {
+}
+.header__nav-item {
+}
+.header__nav-item_status_active {
+}
