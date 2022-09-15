@@ -127,21 +127,18 @@ BEM设计模块
 .screen-2__heading {
   font-size: 48px;
   color: #f01414;
-  padding-top: 95px;
+  padding-top: 96px;
   text-align: center;
 }
-.screen-2__subheading1 {
+.screen-2__subheading {
   font-size: 16px;
+  line-height: 28px;
+  /* padding-top: 36px; */
+  padding-top: 30px;
   color: #07111b;
-  padding-top: 36px;
   text-align: center;
 }
-.screen-2__subheading2 {
-  font-size: 16px;
-  color: #07111b;
-  padding-top: 13px;
-  text-align: center;
-}
+
 .screen-2__phone {
   width: 928px;
   height: 531px;
@@ -152,6 +149,31 @@ BEM设计模块
   bottom: 0;
 }
 .screen-2__point {
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  color: #4d555d;
+  width: 207px;
+  background: url("../images/2-point.png") no-repeat center right;
+}
+.screen-2__point_custom_right {
+  padding-left: 112px;
+  background: url("../images/2-point-right.png") no-repeat center left;
+}
+.screen-2__point_i_1 {
+  position: absolute;
+  top: 156px;
+  left: -153px
+}
+.screen-2__point_i_2 {
+  position: absolute;
+  top: 36px;
+  left: 578px;
+}
+.screen-2__point_i_3 {
+  position: absolute;
+  top: 340px;
+  left: 682px;
 }
 
 /* 
@@ -159,11 +181,11 @@ BEM设计模块
 */
 .screen-3 {
   background: url("../images/3-background.png") no-repeat center;
+  background-size: cover;
 }
 .screen-3 .contain {
   position: relative;
   height: 800px;
-  background-size: cover;
 }
 .screen-3__heading {
   font-size: 48px;
@@ -171,15 +193,12 @@ BEM设计模块
   padding-top: 95px;
   padding-left: 10px;
 }
-.screen-3__subheading1,
-.screen-3__subheading2 {
-  font-size: 16px;
-  color: #fff;
-  padding-top: 36px;
+.screen-3__subheading {
   padding-left: 10px;
-}
-.screen-3__subheading2 {
-  padding-top: 13px;
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 30px;
+  color: #fff;
 }
 
 .screen-3__phone {
@@ -191,10 +210,49 @@ BEM设计模块
   bottom: 0;
 }
 .screen-3__box {
+  position: absolute;
+  width: 304px;
+  height: 264px;
+  left: 3px;
+  bottom: 139px;
+  /* top: 176px; */
+}
+.screen-3__box__item{
+  width: 45%;
+  height: 45%;
+  border-radius: 3px;
+  border: 1px solid #cc7173;
+  float: left;
+  margin-right: 7%;
+}
+.screen-3__box__item:nth-child(2),
+.screen-3__box__item:last-of-type{
+  margin-right: 0;
+}
+.screen-3__box__item:first-of-type{
+  margin-bottom: 9%;
+}
+.screen-3__box p{
+  color: #fff;
+  text-align: center;
+}
+.screen-3__box__item-num{
+  font-size: 48px;
+  font-weight: lighter;
+  padding: 32px 0 8px 0;
+  /* margin-top: 33px; */
+  line-height: 40px;
+}
+.screen-3__box__item-des{
+  font-size: 16px;
 }
 
+
+
+
+
 /* 
-	第四栏
+	第四屏
 */
 .screen-4 {
 }
@@ -216,7 +274,11 @@ BEM设计模块
 }
 .screen-4__phone {
   height: 339px;
+  width: 1145px;
   padding-top: 74px;
+  position: absolute;
+  left: 50%;
+  margin-left: -572px;
 }
 .screen-4__phone > li {
   height: 340px;
@@ -224,11 +286,128 @@ BEM设计模块
   float: left;
   margin-right: 95px;
 }
-.screen-4__phone > li:last-of-type{
-	margin-right: 0;
+.screen-4__phone > li:last-of-type {
+  margin-right: 0;
+}
+.screen-4__phone__pic{
+  height: 267px;
+  width: 214px;
+}
+.screen-4__phone__pic1{
+  background: url('../images/4-phone.png') no-repeat -30px -2px;
+}
+.screen-4__phone__pic2{
+  background: url('../images/4-phone.png') no-repeat -300px -1px;
+}
+.screen-4__phone__pic3{
+  background: url('../images/4-phone.png') no-repeat -30px -272px;
+}
+.screen-4__phone__pic4{
+  background: url('../images/4-phone.png') no-repeat -300px -272px;
+}
+
+.screen-4__phone p{
+  text-align: center;
+}
+.screen-4__phone__colortext{
+  font-size: 16px;
+  line-height: 16px;
+  color: #07111b;
+  padding: 32px 0 13px 0;
+}
+.screen-4__phone__model{
+  font-size: 12px;
+  line-height: 12px;
+  color: #93999f;
+  /* bottom: 0 */
 }
 
 
 /* 
-	第五栏
+	第五屏
 */
+.screen-5 {
+  height: 800px;
+  background-color: #d9dde1;
+  position: relative;
+  /* background: #d9dde1 url("../images/5-background.png") no-repeat center bottom; */
+  /* background-size: cover; */
+}
+.screen-5__heading {
+  font-size: 48px;
+  color: #f01414;
+  padding-top: 135px;
+  text-align: center;
+}
+.screen-5__subheading {
+  font-size: 16px;
+  color: #07111b;
+  padding-top: 36px;
+  text-align: center;
+}
+.screen-5__phone {
+  width: 2652px;
+  height: 538px;
+  background: url("../images/5-background.png") no-repeat center;
+  position: absolute;
+  left: 50%;
+  margin-left: -1346px;
+/* top: 136px; */
+  bottom: -105px;
+}
+/* .screen-5__web1 {
+  width: 454px;
+  height: 358px;
+  background: url("../images/5-game.png") no-repeat center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.screen-5__web2 {
+  width: 454px;
+  height: 358px;
+  background: url("../images/5-wangye.png") no-repeat center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
+
+/* 
+  第六屏
+*/
+.screen-6 {
+  height: 320px;
+  background: #2b333b url("../images/6-background.png") no-repeat center;
+  position: relative;
+}
+.screen-6__btn {
+  display: block;
+  width: 240px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #f01414;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 3px;
+
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 50%;
+  margin-top: -40px;
+}
+
+/* 
+  页脚
+*/
+.footer {
+  background-color: #282828;
+  height: 80px;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 12px;
+}
