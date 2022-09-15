@@ -1,0 +1,234 @@
+/* 
+    第一屏动画
+*/
+.screen-1__heading,
+.screen-1__phone,
+.screen-1__shadow {
+  transition: all 1s;
+}
+.screen-1__heading_animate_init,
+.screen-1__phone_animate_init,
+.screen-1__shadow_animate_init {
+  opacity: 0;
+}
+/* 从下往上 */
+.screen-1__heading_animate_init,
+.screen-1__shadow_animate_init {
+  transform: translate(0, 100%);
+}
+/* 从上往下 */
+.screen-1__phone_animate_init {
+  transform: translate(0, -100%);
+}
+.screen-1__heading_animate_down,
+.screen-1__phone_animate_down,
+.screen-1__shadow_animate_down {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 
+    第二屏动画
+*/
+.screen-2__heading,
+.screen-2__subheading,
+.screen-2__phone {
+  transition: all 1s;
+}
+.screen-2__point {
+  transition: all 1s 1s;
+}
+.screen-2__heading_animate_init,
+.screen-2__subheading_animate_init,
+.screen-2__phone_animate_init,
+.screen-2__point_animate_init,
+.screen-2__point_i_1_animate_init,
+.screen-2__point_i_2_animate_init,
+.screen-2__point_i_3_animate_init {
+  opacity: 0;
+}
+.screen-2__heading_animate_init {
+  transform: translate(0, -100%);
+}
+.screen-2__subheading_animate_init {
+  transform: translate(0, 100%);
+}
+.screen-2__phone_animate_init {
+  transform: translate(0, 50%);
+}
+/* 从左到右 */
+.screen-2__point_i_1_animate_init {
+  transform: translate(-100%, 0);
+}
+/* 从右到左 */
+.screen-2__point_i_2_animate_init,
+.screen-2__point_i_3_animate_init {
+  transform: translate(100%, 0);
+}
+.screen-2__heading_animate_down,
+.screen-2__subheading_animate_down,
+.screen-2__phone_animate_down,
+.screen-2__point,
+.screen-2__point_i_1_animate_down,
+.screen-2__point_i_2_animate_down,
+.screen-2__point_i_3_animate_down {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 
+    第三屏动画
+*/
+.screen-3__heading,
+.screen-3__subheading,
+.screen-3__phone,
+.screen-3__box {
+  transition: all 1s;
+}
+.screen-3__box__item {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.screen-3__box__item:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+}
+.screen-3__heading_animate_init,
+.screen-3__subheading_animate_init,
+.screen-3__phone_animate_init,
+.screen-3__box_animate_init {
+  opacity: 0;
+}
+.screen-3__heading_animate_init {
+  transform: translate(0, -100%);
+}
+.screen-3__subheading_animate_init,
+.screen-3__phone_animate_init {
+  transform: translate(0, 100%);
+}
+.screen-3__box_animate_init {
+  transform: scale(0.5);
+}
+.screen-3__box_animate_down {
+  opacity: 1;
+  transform: scale(1);
+}
+.screen-3__heading_animate_down,
+.screen-3__subheading_animate_down,
+.screen-3__phone_animate_down,
+.screen-3__box__item_animate_down {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 
+    第四屏动画
+*/
+.screen-4__heading,
+.screen-4__subheading {
+  transition: all 1s;
+}
+.screen-4__phone__item1 {
+  transition: all 1s 0.3s;
+}
+
+.screen-4__phone__item2 {
+  transition: all 1s 0.6s;
+}
+.screen-4__phone__item3 {
+  transition: all 1s 0.9s;
+}
+.screen-4__phone__item4 {
+  transition: all 1s 1.2s;
+}
+
+.screen-4__heading_animate_init,
+.screen-4__subheading_animate_init,
+.screen-4__phone__item1_animate_init,
+.screen-4__phone__item2_animate_init,
+.screen-4__phone__item3_animate_init,
+.screen-4__phone__item4_animate_init {
+  opacity: 0;
+}
+
+.screen-4__heading_animate_init {
+  transform: translate(0, -100%);
+}
+.screen-4__subheading_animate_init,
+.screen-4__phone__item1_animate_init,
+.screen-4__phone__item2_animate_init,
+.screen-4__phone__item3_animate_init,
+.screen-4__phone__item4_animate_init {
+  transform: translate(0, 100%);
+}
+
+.screen-4__heading_animate_down,
+.screen-4__subheading_animate_down,
+.screen-4__phone__item1_animate_down,
+.screen-4__phone__item2_animate_down,
+.screen-4__phone__item3_animate_down,
+.screen-4__phone__item4_animate_down {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 
+    第五屏动画
+*/
+.screen-5__heading,
+.screen-5__subheading,
+.screen-5__phone {
+  transition: all 1s;
+}
+.screen-5__heading_animate_init,
+.screen-5__subheading_animate_init,
+.screen-5__phone_animate_init {
+  opacity: 0;
+}
+.screen-5__heading_animate_init {
+  transform: translate(0, -100%);
+}
+.screen-5__subheading_animate_init,
+.screen-5__phone_animate_init {
+  transform: translate(0, 100%);
+}
+.screen-5__heading_animate_down,
+.screen-5__subheading_animate_down,
+.screen-5__phone_animate_down {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 定义帧动画 */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.screen-2__point:before,
+.screen-2__point:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  background-color: rgba(255, 0, 0, .4);
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+}
+
+.screen-2__point:before {
+  animation: bounce 2s infinite 1s;
+}
+.screen-2__point_i_1:after,
+.screen-2__point_i_1:before {
+  left: 188px;
+}
