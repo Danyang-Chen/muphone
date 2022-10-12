@@ -52,12 +52,12 @@ BEM设计模块
   float: left;
   line-height: 38px;
   height: 36px;
-  border-bottom: 2px solid #f7f7f7;
+  /* border-bottom: 2px solid #f7f7f7; */
 }
 .header__nav-item:hover {
   display: inline-block;
-  color: #f01400;
-  border-bottom: 2px solid #f01400;
+  /* color: #f01400;
+  border-bottom: 2px solid #f01400; */
 }
 /* .header__nav-item_status_active {
 } */
@@ -293,7 +293,7 @@ BEM设计模块
   background: url("../images/4-phone.png") no-repeat -30px -2px;
 }
 .screen-4__phone__pic2 {
-  background: url("../images/4-phone.png") no-repeat -300px -1px;
+  background: url("../images/4-phone.png") no-repeat -300px -2px;
 }
 .screen-4__phone__pic3 {
   background: url("../images/4-phone.png") no-repeat -30px -272px;
@@ -388,4 +388,42 @@ BEM设计模块
   text-align: center;
   line-height: 80px;
   font-size: 12px;
+}
+
+.outline{
+  position: fixed;
+  padding: 5px 10px;
+  bottom: 120px;
+  right: 0;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+}
+.outline__item{
+  display: block;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #fff;
+  margin-top: 5px;
+  border-top: 1px solid #eee;
+  color: #93999f;
+}
+.outline__item:first-child {
+  border: none;
+}
+.outline__item_status_active {
+  color: #f00;
+}
+
+.header__nav-tip {
+  width: 30px;
+  height: 2px;
+  background-color: #f00;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: all .5s;;
 }

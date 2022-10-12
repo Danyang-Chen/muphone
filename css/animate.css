@@ -220,7 +220,7 @@
   position: absolute;
   top: 2px;
   left: 1px;
-  background-color: rgba(255, 0, 0, .4);
+  background-color: rgba(255, 0, 0, 0.4);
   border-radius: 50%;
   animation: bounce 2s infinite;
 }
@@ -231,4 +231,41 @@
 .screen-2__point_i_1:after,
 .screen-2__point_i_1:before {
   left: 188px;
+}
+
+/* 
+    导航条
+*/
+.header {
+  transition: all 1s;
+}
+.header_status_back {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.header_status_back .header__logo,
+.header_status_back .header__nav-item {
+  color: #fff;
+  border-bottom: 0;
+}
+.header_status_back .header__nav-item_status_active{
+  color: #f00;
+  /* border-bottom: 2px solid #f00; */
+}
+
+/* 
+  大纲
+*/
+.outline {
+  opacity: 0;
+  transition: all 1s;
+  transform: translate(100%, 0);
+}
+.outline_status_in {
+  opacity: 1;
+  transform: translate(0, 0);
 }
